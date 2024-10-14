@@ -1,0 +1,58 @@
+{
+    "name": "next-boilerplate",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "build-test": "__NEXT_TEST_MODE=1 next build",
+        "start": "next start",
+        "lint": "next lint",
+        "check-types": "tsc --pretty --noEmit",
+        "check-format": "prettier --check .",
+        "check-lint": "eslint . --ext ts --ext tsx --ext js",
+        "format": "prettier --write .",
+        "test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build",
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "@tanstack/react-query": "^5.59.13",
+        "axios": "^1.7.7",
+        "next": "14.2.15",
+        "react": "^18",
+        "react-dom": "^18",
+        "react-hook-form": "^7.53.0",
+        "sharp": "^0.33.5",
+        "tailwind-merge": "^2.5.4"
+    },
+    "devDependencies": {
+        "@tanstack/eslint-plugin-query": "^5.59.7",
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "eslint": "^8",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-airbnb-typescript": "^17",
+        "eslint-config-next": "14.2.15",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-config-react-app": "^7.0.1",
+        "eslint-import-resolver-typescript": "^3.6.3",
+        "eslint-plugin-flowtype": "^8.0.3",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-jsx-a11y": "^6.10.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "eslint-plugin-react": "^7.37.1",
+        "eslint-plugin-react-hooks": "^4.3.0",
+        "eslint-plugin-unused-imports": "^4.1.4",
+        "husky": "^9.1.6",
+        "postcss": "^8",
+        "prettier": "^3.3.3",
+        "prettier-plugin-tailwindcss": "^0.6.8",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5"
+    },
+    "engines": {
+        "npm": "please-use-yarn-or-pnpm",
+        "node": ">=20.0.0"
+    }
+}

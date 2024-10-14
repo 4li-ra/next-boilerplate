@@ -1,0 +1,17 @@
+# Ignore artifacts:
+node_modules
+public
+build
+coverage
+.next
+.vscode
+.DS_Store
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.idea
+.husky
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
